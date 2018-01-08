@@ -11,8 +11,8 @@
   }
   @font-face {
   font-family: 'Conv_CompatilFactLTPro-Rg';
-  src: url('fonts/CompatilFactLTPro-Rg.eot');
-  src: url('fonts/CompatilFactLTPro-Rg.woff') format('woff'), url('fonts/CompatilFactLTPro-Rg.ttf') format('truetype'), url('fonts/CompatilFactLTPro-Rg.svg') format('svg');
+  src: url('../fonts/CompatilFactLTPro-Rg.eot');
+  src: url('../fonts/CompatilFactLTPro-Rg.woff') format('woff'), url('../fonts/CompatilFactLTPro-Rg.ttf') format('truetype'), url('../fonts/CompatilFactLTPro-Rg.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,7 @@ p, .hero-section p a, .overview-section h2,
 -------------------------------------------------- */
 .hero-bg-color{
     background:#F05F40;
-    background-image: url("images/0995_RUS_Main-carousel-image-2760-x-1065-min-min.jpg");
+    background-image: url("../images/0995_RUS_Main-carousel-image-2760-x-1065-min-min.jpg");
     background-size: cover;
     background-position: 50% 100%;
 }
@@ -161,7 +161,28 @@ section{
     border-color: transparent;
 }
 
-http://russellinvestments.net.au/survey/index.php?sid=16915&lang=en
+.btn-primary {
+    background-color: #DD6600;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    font-size: 18px;
+    padding: 0 40px;
+    line-height: 3.1;
+    margin-top: 30px;
+    letter-spacing: 0.05em;
+    -ms-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+}
+.btn-primary:hover, .btn-primary:focus {
+    background: #FFFFFF;
+    color: #DD6600;
+    border: 1px solid transparent;
+}
+
 
 
 /* Featurettes
@@ -283,6 +304,16 @@ section{
   position: absolute;
   top: -10px;
   right: 15px;
+}
+
+/* MODAL
+-------------------------------------------------- */
+.modal-content {
+  background: #c3c3c3;
+  background: -moz-linear-gradient(top, #c3c3c3 0%, #5c5c5c 100%);
+  background: -webkit-linear-gradient(top, #c3c3c3 0%,#5c5c5c 100%);
+  background: linear-gradient(to bottom, #c3c3c3 0%,#5c5c5c 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#5c5c5c',GradientType=0 ); 
 }
 
 
