@@ -324,6 +324,14 @@ section{
   display: inline-block;
   vertical-align: middle;
 }
+.modal-body {
+  text-align: center;
+}
+iframe {
+  width: 98%;
+  margin: 10px 0 0 -15px;
+  overflow: visible;
+}
 
 .modal-header .close {
   color: #FFFFFF !important;
@@ -336,8 +344,7 @@ section{
 }
 
 .modal-dialog {
-  width: 455px;
-  margin: 30px auto;
+  width: 380px;
 }
 .modal-content {
   background: #c3c3c3;
