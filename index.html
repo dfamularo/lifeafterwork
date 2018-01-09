@@ -9,14 +9,11 @@
   <!-- Latest compiled and minified CSS -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-
- 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
-      <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
-    <![endif]-->
-
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+  <![endif]-->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style/iqr.css">
@@ -46,8 +43,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                <h1>Set yourself up for a<br>great life after work</h1>
-                <p><a class="btn btn-default" href="#" role="button">Find out how</a></p>
+                <h1>Set yourself up for&nbsp;a<br>great life after work</h1>
+                <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out how</button>
             </div>
         </div>
     </div>
@@ -90,7 +87,7 @@
         <p>Jane from Toowoomba is looking forward to her retirement, which is only a few years away. She wanted to make sure that she was doing everything she could to maximise her super in these last few years without impacting her current lifestyle.</p>
         <p>With Russell Investments’ help, Jane worked out a way to increase the amount she pays into her super through salary sacrifice, without reducing the money she actually takes home every month. This means saving more, but effectively being paid the same.</p>
         <p class="motiv">Find out more about how you can increase your super balance, while still receiving the same take home pay every month.</p>
-        <p><a class="btn btn-default" href="#" role="button">Find out more</a></p>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out more</button>
       </div>
     </div>
 
@@ -106,7 +103,7 @@
         <p>When he retired, Marco wanted to take a money from his super to buy a caravan and see more of Australia. Russell helped him work out how he could take out an initial cash lump sum, while still receiving regular monthly payments from his super.</p>
         <p>Plus, Marco and wife linked their supers, which meant they paid lower fees. Their combined super continued to grow while they were road tripping. It was the perfect solution for them.</p>
         <p class="motiv">Find out how you can increase the flexibility of your super to allow you to live the life after work you want.</p>
-        <p><a class="btn btn-default" href="#" role="button">Find out more</a></p>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out more</button>
       </div>
 
     </div>
@@ -122,7 +119,7 @@
         <p>Sixty-eight-year old Pavel lives in Newcastle, NSW. When he retired, he thought about taking his super as a lump sum to put in his savings account. But he spoke to Russell Investments before doing anything we showed him how iQ Retirement could help his money last longer.</p>
         <p>Now Pavel gets tax-free income every month and the rest of his super savings are still invested. It's as if he is being paid a salary, but without all the hard work.</p>
         <p class="motiv">Find out how iQ Retirement can generate tax-free income every month plus keep your super invested and working for you.</p>
-        <p><a class="btn btn-default" href="#" role="button">Find out how</a></p>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out how</button>
       </div>
       
     </div>
@@ -172,28 +169,40 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
-                <h2>Whatever your current circumstances, we're waiting to help you make the decisions that will see you achieve a great life after work.<br><br>Just call <span id="phone">1800&nbsp;555&nbsp;667</span> or schedule a call at the time that is most convenient for you.</h2>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Schedule my call</button>
-                <!--p><a class="btn btn-default" href="http://russellinvestments.net.au/survey/index.php?sid=16915&lang=en" role="button">Schedule my call</a></p-->
+                <h3>Whatever your current circumstances, we're waiting to help you make the decisions that will see you achieve a great life after work.<br><br>Just call <span id="phone">1800&nbsp;555&nbsp;667</span> or schedule a call at the time that is most convenient for you.</h3>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModalcallback">Schedule my call</button>
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modalDownload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title" id="myModalLabel">Free guide to structuring your super</h2>
+                    <p>Find out how you can set yourself up for<br>a great life after work</p>
+                  </div>
+                  <div class="modal-body">
+                      <iframe src="https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="475px" allowfullscreen></iframe>  
+                  </div>
+                </div>
+                <!-- /.modal-content -->
+              </div>
+              <!-- /.modal-dialog -->
+            </div>
+
+
+            <div class="modal fade" id="myModalcallback" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                     <h2 class="modal-title" id="myModalLabel">We're here to support you</h2>
-                    <p>Enter your details and we will call you at your preferred time</p>
+                    <p>Enter your details and we will call you<br>at your preferred time</p>
                   </div>
                   <div class="modal-body">
-                      <iframe src="https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="600px" allowfullscreen></iframe>  
-
+                      <iframe src="https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="500px" width="475px" allowfullscreen></iframe>  
                   </div>
-                  <!--div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div-->
                 </div>
                 <!-- /.modal-content -->
               </div>
@@ -221,11 +230,14 @@
   <!-- Bootstrap core JavaScript
     ================================================== -->
   <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script
+        src="https://code.jquery.com/jquery-2.1.3.min.js"
+        integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM="
+        crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-  <!--script src="https://getbootstrap.com/docs/3.3/assets/js/vendor/holder.min.js"></script-->
+  
   <script src="js/scroll.js"></script>
+
 </body>
 
 

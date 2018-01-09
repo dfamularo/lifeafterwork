@@ -138,7 +138,7 @@ section{
     color: #DD6600;
     border: 1px solid #DD6600;
 }
-.hero-section p a, .call-section p a{
+.hero-section .btn-default, .call-section .btn-default {
     background-color:rgba(255, 255, 255, 0.25);
     border-radius: 3px;
     border: solid 1px #FFFFFF;
@@ -152,10 +152,10 @@ section{
     -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out;
 }
-.hero-section p a {
+.hero-section .btn-default {
   margin: 0 0 -30px;
 }
-.hero-section p a:hover, .hero-section p a:focus, .call-section p a:hover, .hero-section p a:focus{
+.hero-section .btn-default:hover, .hero-section .btn-default:focus, .call-section p a:hover, .hero-section p a:focus{
     background: #fff;
     color: #DD6600;
     border-color: transparent;
@@ -244,7 +244,7 @@ section{
     text-align: center; 
 }
 
-.call-section h2{
+.call-section h3{
     font-size: 26px;
     margin: 0 0 20px 0;
     font-family: 'Conv_CompatilFactLTPro-Rg', sans-serif;
@@ -308,6 +308,50 @@ section{
 
 /* MODAL
 -------------------------------------------------- */
+/* ghost element centering technique */
+#modalDownload, #myModalcallback {
+  text-align: center;
+  white-space: nowrap;
+}
+#modalDownload:before, #myModalcallback:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+.modal-dialog {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.modal-header .close {
+  color: #FFFFFF !important;
+  font-size: 5rem !important;
+  font-weight: lighter !important;
+  float: right;
+  margin-top: -47px;
+  margin-right: 15px;
+}
+.call-section h2 {
+    font-size: 22px;
+    letter-spacing: -0.5px;
+    margin: 40px 0 0 42px;
+    font-family: 'Conv_CompatilFactLTPro-Rg', sans-serif;
+    color: #fff;
+    letter-spacing: 0.05em;
+    width: 400px;
+}
+.call-section p {
+    font-size: 18px;
+    line-height: 20px;
+    color: #fff;
+    margin: -20px auto -15px auto !important;
+}
+.modal-dialog {
+  width: 490px;
+  margin: 30px auto;
+}
 .modal-content {
   background: #c3c3c3;
   background: -moz-linear-gradient(top, #c3c3c3 0%, #5c5c5c 100%);
@@ -315,12 +359,18 @@ section{
   background: linear-gradient(to bottom, #c3c3c3 0%,#5c5c5c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#5c5c5c',GradientType=0 ); 
 }
+.modal-header {
+    min-height: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+}
+
 
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (max-width: 668px) {
+@media (max-width: 968px) {
   #logo {
   width: 220px;
   height: auto;
