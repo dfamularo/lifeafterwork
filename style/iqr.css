@@ -328,8 +328,8 @@ section{
   text-align: center;
 }
 iframe {
-  width: 98%;
-  margin: 10px 0 0 -15px;
+  width: 99%;
+  margin: 10px 0 0 0;
   overflow: visible;
 }
 
@@ -344,7 +344,7 @@ iframe {
 }
 
 .modal-dialog {
-  width: 380px;
+  width: 350px;
 }
 .modal-content {
   background: #c3c3c3;

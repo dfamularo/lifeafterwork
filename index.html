@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                 <h1>Set yourself up for&nbsp;a<br>great life after work</h1>
-                <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out how</button>
+                <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload" onclick="downloadFunction()">Find out how</button>
             </div>
         </div>
     </div>
@@ -86,7 +86,7 @@
         <p>Jane from Toowoomba is looking forward to her retirement, which is only a few years away. She wanted to make sure that she was doing everything she could to maximise her super in these last few years without impacting her current lifestyle.</p>
         <p>With Russell Investments’ help, Jane worked out a way to increase the amount she pays into her super through salary sacrifice, without reducing the money she actually takes home every month. This means saving more, but effectively being paid the same.</p>
         <p class="motiv">Find out more about how you can increase your super balance, while still receiving the same take home pay every month.</p>
-        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out more</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload" onclick="downloadFunction()">Find out more</button>
       </div>
     </div>
 
@@ -102,7 +102,7 @@
         <p>When he retired, Marco wanted to take a money from his super to buy a caravan and see more of Australia. Russell helped him work out how he could take out an initial cash lump sum, while still receiving regular monthly payments from his super.</p>
         <p>Plus, Marco and wife linked their supers, which meant they paid lower fees. Their combined super continued to grow while they were road tripping. It was the perfect solution for them.</p>
         <p class="motiv">Find out how you can increase the flexibility of your super to allow you to live the life after work you want.</p>
-        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out more</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload" onclick="downloadFunction()">Find out more</button>
       </div>
 
     </div>
@@ -118,7 +118,7 @@
         <p>Sixty-eight-year old Pavel lives in Newcastle, NSW. When he retired, he thought about taking his super as a lump sum to put in his savings account. But he spoke to Russell Investments before doing anything we showed him how iQ Retirement could help his money last longer.</p>
         <p>Now Pavel gets tax-free income every month and the rest of his super savings are still invested. It's as if he is being paid a salary, but without all the hard work.</p>
         <p class="motiv">Find out how iQ Retirement can generate tax-free income every month plus keep your super invested and working for you.</p>
-        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload">Find out how</button>
+        <button class="btn btn-default" data-toggle="modal" data-target="#modalDownload" onclick="downloadFunction()">Find out how</button>
       </div>
       
     </div>
@@ -169,7 +169,7 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
                 <h3>Whatever your current circumstances, we're waiting to help you make the decisions that will see you achieve a great life after work.<br><br>Just call <span id="phone">1800&nbsp;555&nbsp;667</span> or schedule a call at the time that is most convenient for you.</h3>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#myModalcallback">Schedule my call</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#myModalcallback" onclick="callbackFunction()">Schedule my call</button>
             </div>
 
             <!-- Modal -->
@@ -182,7 +182,7 @@
                     <p>Find out how you can set yourself up for<br>a great life after work</p-->
                   </div>
                   <div class="modal-body">
-                      <iframe src="https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="430px" allowfullscreen></iframe>  
+                      <iframe id="idownload" src="" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="430px" allowfullscreen></iframe>  
                   </div>
                 </div>
                 <!-- /.modal-content -->
@@ -200,7 +200,7 @@
                     <p>Enter your details and we will call you<br>at your preferred time</p-->
                   </div>
                   <div class="modal-body">
-                      <iframe src="https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="570px" allowfullscreen></iframe>  
+                      <iframe id="iCallback" src="" style="border:0px #ffffff none;" name="myiFrame" scrolling="no" frameborder="1" marginheight="0px" marginwidth="0px" height="570px" allowfullscreen></iframe>  
                   </div>
                 </div>
                 <!-- /.modal-content -->
@@ -234,8 +234,9 @@
         integrity="sha256-ivk71nXhz9nsyFDoYoGf2sbjrR9ddh+XDkCcfZxjvcM="
         crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-  
+  <script src="js/button.js"></script>
   <script src="js/scroll.js"></script>
+
 
 </body>
 
