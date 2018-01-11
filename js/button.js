@@ -28,7 +28,13 @@ if( ios ) {
     } else if ( !standalone && !safari ) {
         
         //document.getElementById( 'where-am-i' ).textContent = 'uiwebview';
-        function downloadFunction() {
+        
+    };
+    
+} else {
+    
+    //document.getElementById( 'where-am-i' ).textContent = 'not iOS';
+    function downloadFunction() {
             //alert("form 1");
             
             //Reset iFrame source
@@ -45,12 +51,6 @@ if( ios ) {
             //Set iFrame source
             $('#iCallback').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en');
         }
-        
-    };
-    
-} else {
-    
-    //document.getElementById( 'where-am-i' ).textContent = 'not iOS';
     
 };
 
