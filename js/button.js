@@ -15,7 +15,8 @@ function downloadFunction() {
         // This is the line that matters
         //alert("iPhone detected");
         $('#idownload').attr("disabled", "disabled");
-        window.open(urldownload,"Download","location=yes,menubar=yes");
+
+        var downloadNewWindow = window.open(urldownload,"Download","location=yes,menubar=yes");
 
 
         //$(this).attr('href', urldownload);
@@ -26,7 +27,7 @@ function downloadFunction() {
         //Set iFrame source
         $('#idownload').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en');
     }
-    
+        
 }
 
 function callbackFunction() {
@@ -36,7 +37,9 @@ function callbackFunction() {
         // This is the line that matters
         //alert("iPhone detected");
         $('#iCallback').attr("disabled", "disabled");
-        window.open(urlcallback,"Callback","location=yes,menubar=yes");
+
+        var callbackNewWindow = window.open(urlcallback,"Callback","location=yes,menubar=yes");
+
 
         //$(this).attr('href', urlcallback);
     } else {

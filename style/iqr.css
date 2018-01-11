@@ -324,8 +324,16 @@ section{
   display: inline-block;
   vertical-align: middle;
 }
+.modal-content {
+  overflow: hidden;
+  border: 0.1px solid #5c5c5c;
+}
 .modal-body {
   text-align: center;
+  margin: -10px -5px -30px -5px !important;
+  padding: 0 0 0 0 !important;
+
+  border: 0;
 }
 iframe {
   width: 99%;
@@ -346,6 +354,7 @@ iframe {
 .modal-dialog {
   width: 340px;
 }
+/*
 .modal-content {
   background: #c3c3c3;
   background: -moz-linear-gradient(top, #c3c3c3 0%, #5c5c5c 100%);
@@ -353,6 +362,7 @@ iframe {
   background: linear-gradient(to bottom, #c3c3c3 0%,#5c5c5c 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3c3c3', endColorstr='#5c5c5c',GradientType=0 ); 
 }
+*/
 .modal-header {
     min-height: 0 !important;
     padding: 0 !important;
