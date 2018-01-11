@@ -13,8 +13,8 @@ function downloadFunction() {
 
     if (ios) {
         // This is the line that matters
-        $('#idownload').attr('href', urldownload);
-
+        alert("iPhone detected");
+        $(this).attr('href', urldownload);
     } else {
         // Your code that works for desktop browsers
         //Reset iFrame source
@@ -30,7 +30,8 @@ function callbackFunction() {
 
     if (ios) {
         // This is the line that matters
-        $('#iCallback').attr('href', urlcallback);
+        alert("iPhone detected");
+        $(this).attr('href', urlcallback);
     } else {
         // Your code that works for desktop browsers
         //Reset iFrame source
