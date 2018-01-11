@@ -13,7 +13,7 @@ function downloadFunction() {
 
     if (ios) {
         // This is the line that matters
-        alert("iPhone detected");
+        //alert("iPhone detected");
         $('#idownload').attr("disabled", "disabled");
         window.open(urldownload,"Download","location=yes,menubar=yes");
 
@@ -34,7 +34,7 @@ function callbackFunction() {
 
     if (ios) {
         // This is the line that matters
-        alert("iPhone detected");
+        //alert("iPhone detected");
         $('#iCallback').attr("disabled", "disabled");
         window.open(urlcallback,"Callback","location=yes,menubar=yes");
 
