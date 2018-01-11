@@ -390,6 +390,7 @@ iframe {
   }
   .hero-section h1{
     font-size: 4rem;
+    text-shadow: 1px 1px 1px #000;
   }
   .col-md-7 {
     padding-left: 2rem;
