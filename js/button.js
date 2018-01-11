@@ -1,74 +1,42 @@
 
-var standalone = window.navigator.standalone,
-    userAgent = window.navigator.userAgent.toLowerCase(),
-    safari = /safari/.test( userAgent ),
-    ios = /iphone|ipod|ipad/.test( userAgent );
+var urldownload = "https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en";
+var urlcallback = "https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en"
 
-if( ios ) {
-    
-    if ( !standalone && safari ) {
-        
-        //document.getElementById( 'where-am-i' ).textContent = 'browser';
-        function downloadFunction() {
-            //alert("form 1");
-            
-            //Reset iFrame source
-            $('#idownload').attr('src', '');
-            //Set iFrame source
-            $('#idownload').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en');
-        }
-        
-        function callbackFunction() {
-            //alert("form 2");
-            
-            //Reset iFrame source
-            $('#iCallback').attr('src', '');
-            //Set iFrame source
-            $('#iCallback').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en');
-        }
-        
-    } else if ( standalone && !safari ) {
-        
-        //document.getElementById( 'where-am-i' ).textContent = 'standalone';
-        //Reset iFrame source
-        $('#idownload').attr('src', '');
+// Get the user agent string
+var deviceAgent = navigator.userAgent;
+// Set var to iOS device name or null
+var ios = deviceAgent.toLowerCase().match(/(iphone|ipod|ipad)/);
 
-        //OPEN IFRAME IN A NEW WINDOW
 
-        //Set iFrame source
-        $('#idownload').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en').attr("target","_blank");
-        
-    } else if ( !standalone && !safari ) {
-        
-        //document.getElementById( 'where-am-i' ).textContent = 'uiwebview';
+function downloadFunction() {
+    //alert("form 1");
 
-        
-    };
-    
-} else {
-    
-    //document.getElementById( 'where-am-i' ).textContent = 'not iOS';
-    function downloadFunction() {
-        //alert("form 1");
-        
+    if (ios) {
+        // This is the line that matters
+        $('#idownload').attr('href', urldownload);
+
+    } else {
+        // Your code that works for desktop browsers
         //Reset iFrame source
         $('#idownload').attr('src', '');
         //Set iFrame source
         $('#idownload').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=58655&lang=en');
     }
     
-    function callbackFunction() {
-        //alert("form 2");
-        
+}
+
+function callbackFunction() {
+    //alert("form 2");
+
+    if (ios) {
+        // This is the line that matters
+        $('#iCallback').attr('href', urlcallback);
+    } else {
+        // Your code that works for desktop browsers
         //Reset iFrame source
         $('#iCallback').attr('src', '');
         //Set iFrame source
         $('#iCallback').attr('src', 'https://russellinvestments.net.au/survey/index.php?sid=16915&lang=en');
     }
     
-};
-
-
-
-      
-
+}
