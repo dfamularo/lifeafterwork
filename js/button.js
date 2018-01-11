@@ -14,7 +14,11 @@ function downloadFunction() {
     if (ios) {
         // This is the line that matters
         alert("iPhone detected");
-        $(this).attr('href', urldownload);
+        $('#idownload').attr("disabled", "disabled");
+        window.open(urldownload,"Download","location=yes,menubar=yes");
+
+
+        //$(this).attr('href', urldownload);
     } else {
         // Your code that works for desktop browsers
         //Reset iFrame source
@@ -31,7 +35,10 @@ function callbackFunction() {
     if (ios) {
         // This is the line that matters
         alert("iPhone detected");
-        $(this).attr('href', urlcallback);
+        $('#iCallback').attr("disabled", "disabled");
+        window.open(urlcallback,"Callback","location=yes,menubar=yes");
+
+        //$(this).attr('href', urlcallback);
     } else {
         // Your code that works for desktop browsers
         //Reset iFrame source
