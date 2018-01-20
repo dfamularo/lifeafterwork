@@ -182,6 +182,9 @@ section{
     color: #DD6600;
     border: 1px solid transparent;
 }
+#story1:focus {
+    outline: none;
+}
 
 
 
