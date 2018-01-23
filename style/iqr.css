@@ -38,7 +38,9 @@ p, .hero-section p a, .overview-section h2,
     background-size: cover;
     background-position: 50% 100%;
 }
-
+#hero {
+    margin-top: -50px;
+  }
 section{
     padding: 80px 0;
     position: relative;
@@ -52,8 +54,15 @@ section{
     font-family: 'callie_handregular', sans-serif;
     color: #fff;
     letter-spacing: 1px;
+    margin-top:150px;
+    animation: fadeUpIn 3s;
+    -webkit-animation: fadeUpIn 3s;
 }
-
+@-webkit-keyframes fadeUpIn /* Safari and Chrome */
+{
+  from { opacity:0; margin-top:0px; }
+  to { opacity:1; top: 70px; }
+}
 .hero-section h1:after {
     content: "";
     display: block;
